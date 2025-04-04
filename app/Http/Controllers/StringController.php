@@ -32,6 +32,23 @@ class StringController extends Controller
         return $reversed;
     }
 
+    /*
+    |--------------------------------------------------------------------------
+    |  # Reverse Words in a Sentence Without Using explode.
+    |--------------------------------------------------------------------------
+    */
+    function reverseWords($sentence)
+    {
+        // Split the sentence into words using regex
+        $words = preg_split('/\s+/', trim($sentence));
+
+        // Reverse the array of words
+        $reversed = array_reverse($words);
+
+        // Join them back into a string
+        return implode(' ', $reversed);
+    }
+
 
 
     /*
@@ -61,10 +78,10 @@ class StringController extends Controller
 
 
     /*
-    |--------------------------------------------------------------------------
+    |----------------------------------------------------------------------------------------
     |  # Given an array containing n-1 numbers from 1 to n with one missing number, write a
     |    function to find the missing number.
-    |--------------------------------------------------------------------------
+    |----------------------------------------------------------------------------------------
     */
     public function findMissingNumberArray(Request $request)
     {
@@ -80,5 +97,43 @@ class StringController extends Controller
         return array_values(array_diff($fullRange, $arr)); // Ensure indexed array output
     }
 
+
+    /*
+    |----------------------------------------------------------------------------------------
+    |  # 17.​Find the Longest Common Prefix in an Array of Strings
+    |----------------------------------------------------------------------------------------
+    */
+
+    public function longestCommonPrefix(Request $request)
+    {
+        $input = $request->input('strings', 'flower,flow,flight');
+
+        // Convert comma-separated string to array
+        $inputArray = array_map('trim', explode(',', $input));
+
+        $prefix = $this->getLongestCommonPrefix($inputArray);
+
+        return view('php.longestCommonPrefix', compact('inputArray', 'prefix'));
+    }
+
+
+    private function getLongestCommonPrefix(array $strings)
+    {
+        if (empty($strings)) {
+            return '';
+        }
+
+        $prefix = $strings[0];
+
+        foreach ($strings as $str) {
+            while (strpos($str, $prefix) !== 0) {
+                $prefix = substr($prefix, 0, -1);
+                if ($prefix === '')
+                    return '';
+            }
+        }
+
+        return $prefix;
+    }
 
 }

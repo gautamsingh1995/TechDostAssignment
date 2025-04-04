@@ -67,4 +67,60 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## LicenseReverse a String Without Using `strrev()`
+# Laravel String Utility Project
+
+This Laravel project provides string utility functions, including:
+
+1 Reversing a string without using `strrev()`
+    url Go to: http://127.0.0.1:8000/reverse-string
+
+2.​ Create a Laravel middleware that logs every incoming request URL and method.
+    url Go to: http://127.0.0.1:8000/reverse-string
+## ProductController
+
+3.​ Given an array containing n-1 numbers from 1 to n with one missing number, write a
+    function to find the missing number.
+    url Go to: http://127.0.0.1:8000/reverse-string
+## ProductController
+
+5.​ Find the First Non-Repeating Character in a String
+    url Go to: http://127.0.0.1:8000/reverse-string
+## ProductController
+
+6.​ Check if Two Strings are Anagrams
+    url Go to: http://127.0.0.1:8000/reverse-string
+
+## PrimeNumberController
+7.​ Check if a Number is Prime
+    function name checkPrime()
+    url Go to: http://127.0.0.1:8000/reverse-string
+
+11.​Find the Factorial of a Number Using Recursion
+    function name factorial()
+    url Go to: http://127.0.0.1:8000/get-factorial
+
+12.​Reverse an Integer Without Converting to a String
+    function name reverseInteger()
+    url Go to: http://127.0.0.1:8000/reverse-number
+
+
+## ProductController
+4.​ Given a products table with columns id, name, price, stock, and a categories table
+    with columns id, name, write an optimized query to fetch all products with their
+    category name only while avoiding N+1 queries.
+    function name index()
+    url Go to: http://127.0.0.1:8000/product
+
+8.​ Laravel get selected columns from a table using eloquent
+   function name selectQueryLaravelEloquent()
+
+9.​ Write a Job to insert thousands of records in a table using batch.
+    php artisan make:job InsertBulkRecordsJob
+    php artisan queue:work
+    url Go to: http://127.0.0.1:8000/bulk-insert
+
+10 find an array that contains id = 10 in a multidimensional array without using a loop
+    function name multidimensionalArrayWithoutLoop
+
+
+
