@@ -24,4 +24,62 @@
             </div>
         @endif
     </div>
+
+
+
+
+
+    <!--  1. Find the First Non-Repeating Character in a String (JS) -->
+    <script>
+        function firstNonRepeatingChar(str) {
+            for (let char of str) {
+                if (str.indexOf(char) === str.lastIndexOf(char)) {
+                    return char;
+                }
+            }
+            return null;
+        }
+
+        // Usage
+        console.log(firstNonRepeatingChar("swiss")); // Output: "w"
+
+
+
+        /* 2. Flatten a Nested Array (JS) */
+
+        const nested = [1, [2, [3, 4], 5], 6];
+
+        const flattened = nested.flat(Infinity);
+        console.log(flattened); // [1, 2, 3, 4, 5, 6]
+
+
+
+
+        /*  3. Implement a Promise-based Sleep Function (JS) */
+
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function run() {
+            console.log("Start");
+            await sleep(2000);
+            console.log("After 2 seconds");
+        }
+
+        run();
+
+        /* 4. Shuffle an Array Randomly (JS) */
+
+        function shuffle(arr) {
+            return arr.sort(() => Math.random() - 0.5);
+        }
+
+        // Usage
+        console.log(shuffle([1, 2, 3, 4, 5]));
+
+    </script>
+
+
 @endsection

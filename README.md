@@ -70,30 +70,37 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # Laravel String Utility Project
 
 This Laravel project provides string utility functions, including:
-
+2.​ Create a Laravel middleware that logs every incoming request URL and method.
+## StringController
+    
 1 Reversing a string without using `strrev()`
     url Go to: http://127.0.0.1:8000/reverse-string
 
-2.​ Create a Laravel middleware that logs every incoming request URL and method.
-    url Go to: http://127.0.0.1:8000/reverse-string
-## ProductController
-
 3.​ Given an array containing n-1 numbers from 1 to n with one missing number, write a
     function to find the missing number.
-    url Go to: http://127.0.0.1:8000/reverse-string
-## ProductController
+    function name findMissingNumberArray()
+    url Go to: http://127.0.0.1:8000/missing-number
 
 5.​ Find the First Non-Repeating Character in a String
-    url Go to: http://127.0.0.1:8000/reverse-string
-## ProductController
+    function name findFirstNonRepeating()
+    url Go to: http://127.0.0.1:8000/find-char
+
+16 Reverse Words in a Sentence Without Using explode.
+    function name reverseWords()
+
+17.​Find the Longest Common Prefix in an Array of Strings
+    url Go to: http://127.0.0.1:8000/longest-prefix
+
+## AnagramController
 
 6.​ Check if Two Strings are Anagrams
-    url Go to: http://127.0.0.1:8000/reverse-string
+    function name checkAnagram()
+    url Go to: http://127.0.0.1:8000/check-anagram
 
 ## PrimeNumberController
 7.​ Check if a Number is Prime
     function name checkPrime()
-    url Go to: http://127.0.0.1:8000/reverse-string
+    url Go to: http://127.0.0.1:8000/check-prime
 
 11.​Find the Factorial of a Number Using Recursion
     function name factorial()
@@ -102,6 +109,10 @@ This Laravel project provides string utility functions, including:
 12.​Reverse an Integer Without Converting to a String
     function name reverseInteger()
     url Go to: http://127.0.0.1:8000/reverse-number
+
+13.​Find the Second Largest Element in an Array
+    function name secondLargest()
+    url Go to: http://127.0.0.1:8000/second-largest
 
 
 ## ProductController
@@ -122,5 +133,6 @@ This Laravel project provides string utility functions, including:
 10 find an array that contains id = 10 in a multidimensional array without using a loop
     function name multidimensionalArrayWithoutLoop
 
+14.​Get the key where name = 'x' in a multidimensional array without using a loop
 
 
