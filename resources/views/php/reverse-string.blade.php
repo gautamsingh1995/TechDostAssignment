@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="card shadow p-4">
-        <h1 class="text-center">Find the First Non-Repeating Character</h1>
+        <h1 class="text-center">Reverse a String Without Using strrev().</h1>
 
         <form method="GET" action="{{ url('/find-char') }}" class="mt-3">
             <div class="mb-3">
@@ -14,13 +14,9 @@
             <button type="submit" class="btn btn-primary">Check</button>
         </form>
 
-        @if(isset($firstNonRepeating))
+        @if(isset($reverseString))
             <div class="alert alert-success mt-3">
-                First Non-Repeating Character: <strong>{{ $firstNonRepeating }}</strong>
-            </div>
-        @elseif(isset($inputString))
-            <div class="alert alert-danger mt-3">
-                No Non-Repeating Character Found.
+                Convert Reverse String : <strong>{{ $reverseString }}</strong>
             </div>
         @endif
     </div>
